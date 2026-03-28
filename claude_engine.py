@@ -3,7 +3,7 @@ import json
 from groq import Groq
 
 def generate_ddr(inspection_text, thermal_text):
-    client = Groq(api_key=os.environ.get("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"))
+    client = Groq(api_key=os.environ.get("GROQ_API_KEY"))
     
     prompt = f"""You are a professional building diagnostics expert. You have been given raw data from two inspection reports. Your job is to produce a structured DDR (Detailed Diagnostic Report) that is clear, professional, and client-friendly.
 
